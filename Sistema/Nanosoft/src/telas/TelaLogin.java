@@ -128,7 +128,8 @@ public class TelaLogin extends javax.swing.JFrame {
     }//GEN-LAST:event_txtSenhaActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        if(txtLogin.getText().equals("usuario")&& txtSenha.getText().equals("123456")){
+        String senha = new String(txtSenha.getPassword());
+        if(txtLogin.getText().equals("usuario")&& senha.equals("123")){
             JOptionPane.showMessageDialog(null,"Bem Vindo!"); 
         }else{
             JOptionPane.showMessageDialog(null,"Acesso Negado!");
@@ -164,10 +165,8 @@ public class TelaLogin extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new TelaLogin().setVisible(true);
-            }
+        java.awt.EventQueue.invokeLater(() -> {
+            new TelaLogin().setVisible(true);
         });
     }
 
