@@ -7,8 +7,8 @@
         <option id="color.recent"><![CDATA[#000000]]></option>
     </view>
     <view id="resource-table">
-        <field id="0" name="Nome" width="75" order="0"/>
-        <field id="1" name="Função" width="24" order="1"/>
+        <field id="0" name="Nome" width="51" order="0"/>
+        <field id="1" name="Função" width="48" order="1"/>
     </view>
     <!-- -->
     <calendars>
@@ -34,21 +34,24 @@
             <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
             <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
         </taskproperties>
-        <task id="33" name="Analise de Viabilidade" color="#000000" meeting="false" start="2016-03-21" duration="18" complete="0" expand="true">
-            <task id="36" name="Reunião apresentação do projeto" color="#8cb6ce" meeting="true" start="2016-03-21" duration="0" complete="0" expand="true"/>
+        <task id="178" name="Modelagem de Negócio" meeting="false" start="2016-03-21" duration="2" complete="0" expand="true">
+            <task id="180" name="Identificar o modelo de negócio" color="#8cb6ce" meeting="false" start="2016-03-21" duration="2" complete="0" expand="true"/>
+        </task>
+        <task id="33" name="Analise de Viabilidade" color="#000000" meeting="false" start="2016-03-25" duration="14" complete="0" expand="true">
+            <task id="36" name="Reunião apresentação do projeto" color="#8cb6ce" meeting="true" start="2016-03-25" duration="0" complete="0" expand="true"/>
             <task id="69" name="Reunião para definir se o projeto é viável" color="#8cb6ce" meeting="true" start="2016-04-14" duration="0" complete="0" expand="true"/>
         </task>
         <task id="0" name="Elicitação de Requisitos" color="#000000" meeting="false" start="2016-03-29" duration="29" complete="0" expand="true">
-            <task id="60" name="Primeira entrevista com o dono da empresa" color="#8cb6ce" meeting="true" start="2016-03-29" duration="0" complete="0" expand="true"/>
-            <task id="65" name="Segunda entrevista com o dono da empresa" color="#8cb6ce" meeting="true" start="2016-04-05" duration="0" complete="0" expand="true"/>
+            <task id="60" name="Primeira entrevista com o empresário" color="#8cb6ce" meeting="true" start="2016-03-29" duration="0" complete="0" expand="true"/>
+            <task id="65" name="Segunda entrevista com o empresário" color="#8cb6ce" meeting="true" start="2016-04-05" duration="0" complete="0" expand="true"/>
             <task id="66" name="Elaboração do documento preliminar de requisitos" color="#8cb6ce" meeting="false" start="2016-04-05" duration="7" complete="0" expand="true"/>
             <task id="75" name="Reunião pra apresentar os requisitos para a equipe" color="#8cb6ce" meeting="true" start="2016-04-14" duration="0" complete="0" expand="true"/>
-            <task id="176" name="Terceira entevista com o dono da empresa" color="#8cb6ce" meeting="true" start="2016-04-28" duration="0" complete="0" expand="true"/>
+            <task id="176" name="Terceira entevista com o empresário" color="#8cb6ce" meeting="true" start="2016-04-28" duration="0" complete="0" expand="true"/>
             <task id="177" name="Alterações no Documento de requisitos" color="#8cb6ce" meeting="false" start="2016-04-28" duration="7" complete="0" expand="true"/>
         </task>
-        <task id="1" name="Modelagem do Negocio" meeting="false" start="2016-04-14" duration="10" complete="0" expand="true">
+        <task id="1" name="Modelagem do Sistema" meeting="false" start="2016-04-14" duration="10" complete="0" expand="true">
             <task id="79" name="Criação de diagramas de casos de uso" color="#8cb6ce" meeting="false" start="2016-04-14" duration="10" complete="0" expand="true"/>
-            <task id="92" name="Analise e Projeto" color="#8cb6ce" meeting="false" start="2016-04-14" duration="10" complete="0" expand="true"/>
+            <task id="92" name="Design" color="#8cb6ce" meeting="false" start="2016-04-14" duration="10" complete="0" expand="true"/>
         </task>
         <task id="80" name="Implementação" color="#000000" meeting="false" start="2016-04-14" duration="42" complete="0" expand="true">
             <task id="90" name="Documentação do Código Fonte" color="#8cb6ce" meeting="false" start="2016-04-14" duration="42" complete="0" expand="true"/>
@@ -76,6 +79,7 @@
         <resource id="3" name="Fernando Colósio" function="SoftwareDevelopment:2" contacts="" phone=""/>
     </resources>
     <allocations>
+        <allocation task-id="180" resource-id="1" function="Default:1" responsible="true" load="100.0"/>
         <allocation task-id="36" resource-id="1" function="Default:1" responsible="true" load="100.0"/>
         <allocation task-id="65" resource-id="1" function="Default:1" responsible="true" load="100.0"/>
         <allocation task-id="75" resource-id="1" function="Default:1" responsible="true" load="100.0"/>
@@ -87,6 +91,7 @@
         <allocation task-id="115" resource-id="1" function="Default:1" responsible="true" load="100.0"/>
         <allocation task-id="30" resource-id="1" function="Default:1" responsible="true" load="100.0"/>
         <allocation task-id="141" resource-id="1" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="180" resource-id="2" function="SoftwareDevelopment:8" responsible="false" load="100.0"/>
         <allocation task-id="36" resource-id="2" function="SoftwareDevelopment:8" responsible="false" load="100.0"/>
         <allocation task-id="60" resource-id="2" function="SoftwareDevelopment:8" responsible="true" load="100.0"/>
         <allocation task-id="65" resource-id="2" function="SoftwareDevelopment:8" responsible="false" load="100.0"/>
@@ -99,6 +104,8 @@
         <allocation task-id="177" resource-id="2" function="SoftwareDevelopment:8" responsible="true" load="100.0"/>
         <allocation task-id="158" resource-id="2" function="SoftwareDevelopment:8" responsible="false" load="100.0"/>
         <allocation task-id="115" resource-id="2" function="SoftwareDevelopment:8" responsible="true" load="100.0"/>
+        <allocation task-id="101" resource-id="2" function="SoftwareDevelopment:8" responsible="true" load="100.0"/>
+        <allocation task-id="98" resource-id="2" function="SoftwareDevelopment:8" responsible="true" load="100.0"/>
         <allocation task-id="141" resource-id="2" function="SoftwareDevelopment:8" responsible="false" load="100.0"/>
         <allocation task-id="140" resource-id="2" function="SoftwareDevelopment:8" responsible="true" load="100.0"/>
         <allocation task-id="36" resource-id="0" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
@@ -112,8 +119,8 @@
         <allocation task-id="158" resource-id="0" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
         <allocation task-id="118" resource-id="0" function="SoftwareDevelopment:2" responsible="true" load="70.0"/>
         <allocation task-id="110" resource-id="0" function="SoftwareDevelopment:2" responsible="true" load="30.0"/>
-        <allocation task-id="101" resource-id="0" function="SoftwareDevelopment:2" responsible="true" load="70.0"/>
-        <allocation task-id="98" resource-id="0" function="SoftwareDevelopment:2" responsible="true" load="70.0"/>
+        <allocation task-id="101" resource-id="0" function="SoftwareDevelopment:2" responsible="false" load="70.0"/>
+        <allocation task-id="98" resource-id="0" function="SoftwareDevelopment:2" responsible="false" load="70.0"/>
         <allocation task-id="36" resource-id="3" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
         <allocation task-id="75" resource-id="3" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
         <allocation task-id="69" resource-id="3" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
